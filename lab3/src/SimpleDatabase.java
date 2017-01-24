@@ -36,8 +36,11 @@ public class SimpleDatabase {
      * Constructs a simple database from a file of entity links and a file of labels
      */
     public SimpleDatabase(File yagoLinks, File yagoLabels) throws IOException {
+        // label/entity <-link-> label/entity
         load(yagoLinks, links, false);
+        // entity -> labels
         load(yagoLabels, labels, false);
+        // label -> entities
         load(yagoLabels, reverseLabels, true);
     }
 
