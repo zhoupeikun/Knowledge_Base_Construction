@@ -1,4 +1,4 @@
-// package lab6;
+package lab6;
 
 import java.io.BufferedReader;
 import java.io.File;
