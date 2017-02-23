@@ -1,4 +1,4 @@
-//package lab4;
+// package lab4;
 
 /**
  * Represents a Wikipedia page
