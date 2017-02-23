@@ -1,4 +1,4 @@
-// package lab5;
+package lab5;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -77,7 +77,7 @@ public class POSLocationExtractor {
         // Uncommment the following line for your convenience. Comment it out
         // again before submitting!
         // args = new String[] { "c:/fabian/data/wikipedia/wikipedia_pos.txt", "c:/fabian/data/my-results.txt" };
-        args = new String[]{"wikipedia-first-pos.txt", "my-results.txt"};
+        // args = new String[]{"wikipedia-first-pos.txt", "my-results.txt"};
         try (Parser parser = new Parser(new File(args[0]))) {
             try (Writer result = new OutputStreamWriter(new FileOutputStream(args[1]), "UTF-8")) {
                 while (parser.hasNext()) {

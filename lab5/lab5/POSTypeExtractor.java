@@ -1,4 +1,4 @@
-// package lab5;
+package lab5;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -74,7 +74,7 @@ public class POSTypeExtractor {
         // Uncommment the following line for your convenience. Comment it out
         // again before submitting!
         // args = new String[] { "c:/fabian/data/wikipedia/wikipedia_pos.txt", "c:/fabian/data/my-output.txt" };
-        args = new String[]{"wikipedia-first-pos.txt", "my-output.txt"};
+        // args = new String[]{"wikipedia-first-pos.txt", "my-output.txt"};
         try (Parser parser = new Parser(new File(args[0]))) {
             try (Writer result = new OutputStreamWriter(new FileOutputStream(args[1]), "UTF-8")) {
                 while (parser.hasNext()) {
